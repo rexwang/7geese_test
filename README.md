@@ -1,33 +1,29 @@
-![Boilerplate](https://github.com/backbone-boilerplate/backbone-boilerplate/raw/assets/header.png)
-
-[![Build Status](https://travis-ci.org/backbone-boilerplate/backbone-boilerplate.png?branch=master)](https://travis-ci.org/backbone-boilerplate/backbone-boilerplate) [![Coverage Status](https://coveralls.io/repos/backbone-boilerplate/backbone-boilerplate/badge.png)](https://coveralls.io/r/backbone-boilerplate/backbone-boilerplate) [![Dependency Status](https://gemnasium.com/backbone-boilerplate/backbone-boilerplate.png)](https://gemnasium.com/backbone-boilerplate/backbone-boilerplate)
-
-Backbone Boilerplate
+7geese Test
 ====================
 
-This boilerplate is the product of much research and frustration.  Existing
-boilerplates freely modify Backbone core, lack a build process, and are very
-prescriptive; Backbone Boilerplate changes that.
+This is the test code for 7geese. Here is the requirements:
 
-The Backbone Boilerplate is a way of organizing a web application with some
-opinionated defaults: such as Backbone, Lo-Dash (Underscore compatibility
-build), jQuery, RequireJS, Bower, Grunt, Karma, and the HTML5 Boilerplate
-styles.  Built in testing support for: QUnit, Jasmine, and Mocha with Chai.
+1) With Backbone.js and the Github api, show the list of public repository of the 7geese organization, ordered by fork count desc.
+2) For each item show: repo name, fork number, language and created date.
+3) Format the repository title to have hyphens replaced by spaces, and each word capitalize except: “as”, “on”. Example: “this-is-a-test-on-javascript” becomes “This Is A Test on Javascript”.
 
-Organize your application with a logical file structure, develop your
-Models/Collections/Views/Routers inside modules, and build knowing you have
-efficient code that will not bottleneck your users.
-
-Thanks to our
-[Contributors](https://github.com/backbone-boilerplate/backbone-boilerplate/contributors)!  Special Thanks to: [cowboy](http://github.com/cowboy),
-[iros](http://github.com/iros), [nimbupani](http://github.com/nimbupani),
-[wookiehangover](http://github.com/wookiehangover), and
-[jugglinmike](http://github.com/jugglinmike) for helping me create this project.  Extra Special Thanks to: [Paul Guinan](http://bigredhair.com/work/paul.html)
-for giving me usage rights to his fantastic Boilerplate character.
-
-## Documentation ##
-
-[Backbone Boilerplate Wiki](https://github.com/backbone-boilerplate/backbone-boilerplate/wiki)
+Sample:
+---
+Name: SG Tpie
+Fork count: 4
+Language: Javascript
+---
+Name: 7Geese Recognition Board
+Fork count: 2
+Language: Python
+---
+Name: Hubot on Dotcloud
+Fork count: 0
+Language: Shell
+---
+Name: Django Db Utils
+Fork count: 0
+Language: Python
 
 ## Getting started ##
 
@@ -36,10 +32,7 @@ The easiest way to get started is to install Git and clone the repository:
 ``` bash
 # Using Git, fetch only the latest commits.  You won't need the full history
 # for your project.
-git clone --depth 1 https://github.com/backbone-boilerplate/backbone-boilerplate
-
-# Move the repository to your own project name.
-mv backbone-boilerplate my-project
+git clone --depth 1 git@github.com:rexwang/7geese_test.git
 ```
 
 You will need to download and install [Node.js](http://nodejs.org/) if you want
@@ -54,9 +47,6 @@ good idea to update after fetching.
 # Install global dependencies.  Depending on your user account you may need to
 # gain elevated privileges using something like `sudo`.
 npm install -g grunt-cli bower
-
-# Optionally install coveralls (integration is baked in with Travis CI).
-npm install -g coveralls
 
 # Install NPM dependencies.
 npm install
@@ -100,9 +90,5 @@ grunt karma:run
 After either above command is run, code coverage reports will be available in
 the `test/coverage` folder.
 
-By default, the test runner is Mocha and Chai.  You can easily change this by
+By default, the test runner is Jasmine.  You can easily change this by
 editting the commented regions of the karma configuration in `Gruntfile.js`.
-
-## License ##
-Copyright © 2014 Tim Branyen (@tbranyen)  
-Licensed under the MIT license.
