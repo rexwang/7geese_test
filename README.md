@@ -7,6 +7,7 @@ This is the test code for 7geese. Here is the requirements:
 2) For each item show: repo name, fork number, language and created date.
 3) Format the repository title to have hyphens replaced by spaces, and each word capitalize except: “as”, “on”. Example: “this-is-a-test-on-javascript” becomes “This Is A Test on Javascript”.
 
+``` bash
 Sample:
 ---
 Name: SG Tpie
@@ -24,6 +25,7 @@ Language: Shell
 Name: Django Db Utils
 Fork count: 0
 Language: Python
+```
 
 ## Getting started ##
 
