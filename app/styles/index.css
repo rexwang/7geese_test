@@ -1,0 +1,6 @@
+/*-- Bootstrap CSS. -----------------------------------------*/
+
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+
+/*-- Application stylesheets. -----------------------------------------------*/
+@import "custom.css";
